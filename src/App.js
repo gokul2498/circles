@@ -1,26 +1,23 @@
 import './App.css';
-import { Card } from './components/circlesinfocard';
+import { ActiveFeed } from './components/activefeed';
 
 function App() {
   const data = [
     {
       id: 0,
-      Level: 2,
       Name: "CSE III Borrow",
-      circleLimit: 23,
-      duration: 10,
-      CreditDetail: 10,
-      noOfParticipants: 40,
+      EMI: 40,
+      Level: 2,
+      CreditDetail: '10 %',
+      Duration: 10,
       borrow: true
     },
     {
       id: 1,
-      Level: 1,
-      Name: "Football Team Saving",
-      circleLimit: 23,
-      duration: 10,
-      PaidedDetail: 10,
-      noOfParticipants: 40,
+      Name: "CSE III Borrow",
+      EMI: 40,
+      Level: 2,
+      Duration: 10,
       savings: true
 
     },
@@ -35,7 +32,7 @@ function App() {
       {data.map((item) => {
         console.log(item, "hii");
         return (
-          <Card obj={item} />
+          <ActiveFeed obj={item} />
         )
 
       })}
