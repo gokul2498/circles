@@ -1,0 +1,47 @@
+.sidebar {
+    height: 2000px;
+    width: 300px;
+    background-color: #F2F6FB;
+}
+
+.circles-finance {
+    height: 28px;
+    width: 156px;
+    color: #335699;
+    font-family: "Airbnb Cereal App";
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #f2f6fb;
+    .logo {
+        margin-left: 30px;
+        padding-top: 48px;
+        /* font-family: "Airbnb Cereal App"; */
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 28px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        img {
+            height: 24px;
+            width: 24px;
+            margin-right: 10px;
+            margin-top: 18px;
+        }
+        h2 {
+            color: #335699;
+            font-family: "Airbnb Cereal App";
+            margin-bottom: 0;
+        }
+    }
+    .menu-container {
+        margin-top: 75px;
+    }
+}

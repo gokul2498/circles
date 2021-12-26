@@ -1,0 +1,164 @@
+.container {
+    display: "flex"
+}
+
+.feed {
+    background-color: #f5faff;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding: 48px 30px 50px 30px;
+    padding-left: 30px;
+    width: 900px;
+}
+
+.dashboard-container,
+.borrow-container,
+.lending-container,
+.saving-container {
+    display: flex;
+    height: 2000px;
+}
+
+.level {
+    width: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.connect {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.connect-btn {
+    margin-top: 8px;
+    height: 28px;
+    width: 102px;
+    border-radius: 5px;
+    background-color: #335699;
+    color: #ffffff;
+    /* font-family: "Airbnb Cereal App"; */
+    font-size: 8px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.Active_list {
+    margin-top: 40px;
+}
+
+.billing-details-section {
+    margin-top: 50px;
+}
+
+.saving-container,
+.lending-container,
+.borrow-container {
+    .saveDashcard {
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            .img-div {
+                height: 50px;
+                width: 50px;
+                border-radius: 8px;
+                img {
+                    margin: 15px 0px 0px 10px;
+                }
+            }
+            div {
+                font-size: 18px;
+                color: #111111;
+            }
+        }
+        margin-bottom:30px;
+        .dash-card-text {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.aplay-btn {
+    margin: 30px 0 50px 0;
+    height: 60px;
+    //   width: 88px;
+    width: 100%;
+    color: #ffffff;
+    //   font-family: "Airbnb Cereal App";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #335699;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.saving_text {
+    color: #B373B8;
+}
+
+.lending_text {
+    color: #157576;
+}
+
+.borrow_text {
+    color: #FF9886
+}
+
+.lending_progress_bar,
+.saving_progress_bar,
+.savings_progress_bar,
+.borrow_progress_bar {
+    height: 3px;
+    width: 100%;
+    border-radius: 1px;
+    background-color: #CCFEFF;
+    margin: 30px 10px 5px 0;
+    //   background-color: #ff9886;
+}
+
+.lending_progress_bar::after,
+.saving_progress_bar::after,
+.savings_progress_bar::after,
+.borrow_progress_bar::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #157576;
+    position: absolute;
+}
+
+.saving_progress_bar,
+.savings_progress_bar {
+    background-color: #F2E8F3;
+}
+
+.saving_progress_bar::after,
+.savings_progress_bar::after {
+    width: 90px;
+    background-color: #B373B8;
+}
+
+.borrow_progress_bar {
+    background-color: #FFE2DD;
+}
+
+.borrow_progress_bar::after {
+    background-color: #FF9886;
+}

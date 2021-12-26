@@ -1,0 +1,86 @@
+.dash-card-outline {
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: rgb(242, 232, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .card-header {
+        .number {
+            display: flex;
+            justify-content: end;
+            margin-top: 20px;
+            color: #B373B8;
+        }
+    }
+    .amountText,
+    .amount {
+        font-size: 12px;
+    }
+    .saving_progress_bar,
+    .borrow_progress_bar {
+        height: 3px;
+        width: 100%;
+        border-radius: 1px;
+        background-color: #FFFFFF;
+        margin: 10px 0 5px 0;
+    }
+    .saving_progress_bar:after,
+    .borrow_progress_bar::after {
+        content: "";
+        width: 60px;
+        height: 3px;
+        border-radius: 1px;
+        background-color: #B373B8;
+        position: absolute;
+    }
+    .borrow_progress_bar {
+        background-color: #FFFFFF;
+    }
+    .borrow_progress_bar::after {
+        background-color: #FF9886;
+    }
+    .text,
+    .percentage {
+        font-size: 10px;
+    }
+    .card-bottom {
+        margin-bottom: 20px;
+        color: #111111;
+        font-size: 8px;
+        .EMI-text {
+            color: #111111;
+            font-family: "Airbnb Cereal App";
+            font-size: 12px;
+            font-weight: 1000;
+        }
+    }
+}
+
+.card-outline {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-title {
+    height: 36px;
+    width: 89px;
+    color: #111111;
+    font-family: "Airbnb Cereal App";
+    font-size: 14px;
+    font-weight: 1000;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin: 5px 0px 0px 0px;
+}
+
+.dash-card-outline {
+    margin-top: 30px;
+    margin-bottom: 48px;
+    div {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
