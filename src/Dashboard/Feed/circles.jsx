@@ -43,12 +43,17 @@ export default function Circles() {
         <div className='circles'>
         <div className="title" style={{display:'flex'}}>
            <div style={{ height: '50px',width: '50.39px', borderRadius: '8px',backgroundColor: '#DEF0F9'}} >
-               <img src={`/images/circles/all-borrow-circle.png`} alt="" style={{ height: '22px',
-   width: '22.17px',margin:'10px'}} />
+               <img src={`/images/circles/all-borrow-circle.png`} alt="" 
+                      style={{ height: '22px',
+                         width: '22.17px',
+                         margin:'10px'}} />
                 </div>
                 <h3 className="circlesText">Circles</h3>
            </div>
-            <Table key={circlesHeadingData} headData = {circlesHeadingData} rowData={circlesRowData}/>
+            <Table 
+            key={circlesHeadingData} 
+            headData={circlesHeadingData} 
+            rowData={circlesRowData}/>
         </div>
     )
 }

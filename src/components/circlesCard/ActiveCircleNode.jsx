@@ -2,7 +2,7 @@ import React from 'react'
 import './circlesInfoCard.scss'
 export default function ActiveCircleNode(props) {
     const { circleData } = props;
-    const Level = circleData.getLevelInfo[0].Type == "saving" ? 1 : 2;
+    const Level = circleData.getLevelInfo[0].Type === "saving" ? 1 : 2;
     console.log( circleData.getLevelInfo)
     return (
         <>
@@ -24,13 +24,12 @@ export default function ActiveCircleNode(props) {
                                     </div>
                                 </div>
                                 {
-                                    Level == 1 ? 
+                                    Level === 1 ? 
                                     <div className='upcoming_bidding_info' >
                                         <div className="bidding_info">
                                         <p>UpComing Bidding: <span style={{fontWeight:'300'}}>25 days</span> </p>
                                         <p>
                                             Tenure: <span style={{fontWeight:'300'}}>{level_data.Months} Months </span>                           
-                                            
                                         </p>
                                         </div>
                                         <div className="icon_box">
@@ -41,30 +40,28 @@ export default function ActiveCircleNode(props) {
                                         <img src="/images/colored-icons/info.png" alt="" />
                                     </div>
                                 }
-
-                               
                             </div>
                             <div className={level_data.Type+"_progress" }/>
                             <div className={level_data.Type+"_progress-text"}>
                             <div className="amount-text">
                                 {
-                                    Level == 2 ? <>Amount Paid:
+                                    Level === 2 ?
+                                     <>
+                                     Amount Paid:
                                     {level_data.CreditDetail}</> : 
-                                    <>  Paid Members:
+                                    <> 
+                                     Paid Members:
                                         {level_data.PaidedDetail}
                                     </>
-                                }
-                              
+                                }                             
                             </div>
                             <div className={level_data.Type+"_progress-text-right"}>
                             {
-                                    Level== 2 ? <> Amount Available 40%</> : 
+                                    Level=== 2 ? <> Amount Available 40%</> : 
                                     <>    Unpaid Members:
                                     {level_data.noOfParticipants - level_data.PaidedDetail}
                                     </>
                                 }
-                               
-                                
                                 </div>
                             </div>
                         </div>

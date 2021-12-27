@@ -47,11 +47,14 @@ export default function UpcomingEmi() {
                     <div className="title" style={{display:'flex'}}>
                         <div style={{ height: '50px',width: '50.39px', borderRadius: '8px',backgroundColor: '#E7EAF0'}} >
                         <img src={`/images/sidebar/circle-color.png`} alt="" style={{ height: '22px',
-    width: '22.17px',margin:'10px'}} />
+                                 width: '22.17px',margin:'10px'}} />
                         </div>
                         <h3 className="upcomingEmiText">Upcoming EMI</h3>
                     </div>
-                    <Table  key={upcomingEmiHeadData} headData = {upcomingEmiHeadData} rowData={upcomingEmiRowData}/>
+                    <Table  
+                        key={upcomingEmiHeadData} 
+                        headData = {upcomingEmiHeadData} 
+                        rowData={upcomingEmiRowData}/>
 
                 </div>
     )

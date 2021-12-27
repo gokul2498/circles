@@ -12,13 +12,12 @@ const App = () => {
          <div class="container" style={{display:"flex"}}>
           <Sidebar/>
           <Routes>
-          <Route exact path="/" element= {<Dashboard />} />
-          <Route exact path="/borrow" element= {<Borrow />} />
-          <Route exact path="/saving" element= {<Saving />} />
-          <Route exact path="/lending" element= {<Lending />} />
+             <Route exact path="/" element= {<Dashboard />} />
+             <Route exact path="/borrow" element= {<Borrow />} />
+             <Route exact path="/saving" element= {<Saving />} />
+             <Route exact path="/lending" element= {<Lending />} />
           </Routes>
-        </div>
-            
+        </div>     
         </BrowserRouter>
     )
 }

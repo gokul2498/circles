@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import './sidebarOption.scss';
 import  {SidebarContext}  from './sidebarContext.jsx';
 export default function SidebarOption(props) {
-    
     const name  =  useContext(SidebarContext);
     console.log(name)
 
@@ -28,7 +27,7 @@ export default function SidebarOption(props) {
         let childElements = e.target.parentElement.parentElement.parentElement.children;
         for(let elements of childElements)
         {
-           if(elements.id ==  e.target.parentElement.parentElement.id){
+           if(elements.id ===  e.target.parentElement.parentElement.id){
                 elements.className = "sidebarOption active";
                 elements.querySelector("img").src  = `/images/sidebar/${elements.id}-color.png`;
               
@@ -42,10 +41,11 @@ export default function SidebarOption(props) {
 
      return (
         <div  id={imageSource}  className="sidebarOption"onMouseOver={(e)=>handleMouseHover(e.target)} onMouseLeave={(e)=>handleMouseLeave(e.target)} >
-            <img src={`/images/sidebar/${imageSource}.png`} alt="image not found"/>
+            <img src={`/images/sidebar/${imageSource}.png`} alt="pic not found"/>
             <Link to={url} style={{ textDecoration: 'none' }}>
-                <h3  onClick={makeActiveId} >{text}</h3>
-                
+                <h3  onClick={makeActiveId}>
+                    {text}
+                </h3> 
             </Link> 
         </div>
     )

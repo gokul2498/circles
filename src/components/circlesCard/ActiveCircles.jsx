@@ -33,7 +33,6 @@ export default function ActiveCircles() {
             <ActiveCircleNode circleData = {borrow_data}/>
             <ActiveCircleNode circleData = {saving_data}/>
             <ActiveCircleNode circleData = {borrow_data}/>
-
         </div>
     )
 }

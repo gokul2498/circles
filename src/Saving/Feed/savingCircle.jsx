@@ -56,16 +56,18 @@ const SavingCirclesRowData = [
 ];
 export default function AllSavingCircles() {
     return (
-       
         <div className='AllSavingCircles'>
          <div className="title" style={{display:'flex'}}>
             <div style={{ height: '50px',width: '50.39px', borderRadius: '8px',backgroundColor: '#DEF0F9'}} >
             <img src={`/images/circles/all-borrow-circle.png`} alt="" style={{ height: '22px',
-   width: '22.17px',margin:'10px'}} />
+                width: '22.17px',margin:'10px'}} />
                  </div>
                  <h3 className="AllSavingCirclesText">All Saving Circles</h3>
             </div>
-         <Table key={SavingCirclesHeadingData} headData = {SavingCirclesHeadingData} rowData={SavingCirclesRowData}/>
+         <Table 
+            key={SavingCirclesHeadingData} 
+            headData = {SavingCirclesHeadingData} 
+            rowData={SavingCirclesRowData}/>
         </div>
     )
 }

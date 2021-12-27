@@ -12,7 +12,6 @@ const activityRowData = [
       status: 'ActivityStatusSuccessButton',
       fColor: '#03AE7A',
       icon: 'borrow',
-     
     },
     {
       createdAt: '14:40',
@@ -33,7 +32,6 @@ const activityRowData = [
       status: 'ActivityStatusFailureButton',
       fColor: '#03AE7A',
       icon: 'lending',
-    
     },
     {
       createdAt: '14:40',
@@ -53,8 +51,7 @@ const activityRowData = [
         amount: '+1024.26 BTC',
         status: 'ActivityStatusSuccessButton',
         fColor: '#03AE7A',
-        icon: 'borrow',
-       
+        icon: 'borrow',   
       },
       {
         createdAt: '14:40',
@@ -105,8 +102,7 @@ const activityRowData = [
         amount: '+1024.26 BTC',
         status: 'ActivityStatusFailureButton',
         fColor: '#03AE7A',
-        icon: 'lending',
-      
+        icon: 'lending', 
       },
       {
         createdAt: '14:40',
@@ -121,7 +117,6 @@ const activityRowData = [
   ];
 
 export default function Activity() {
-
     return (
         <div>
             <ActivityCreation activityRowData={activityRowData} activityHeadingData={activityHeadingData}/>
